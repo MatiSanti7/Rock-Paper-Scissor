@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+:root {
+    --Scissors1: hsl(39, 89%, 49%);
+    --Scissors2: hsl(40, 84%, 53%);
+    --Paper1: hsl(230, 89%, 62%);
+    --Paper2: hsl(230, 89%, 65%);
+    --Rock1: hsl(349, 71%, 52%);
+    --Rock2: hsl(349, 70%, 56%);
+    --Lizard1: hsl(261, 73%, 60%);
+    --Lizard2: hsl(261, 72%, 63%);
+    --Cyan1: hsl(189, 59%, 53%);
+    --Cyan2: hsl(189, 58%, 57%);
+    --DarkText: hsl(229, 25%, 31%);
+    --ScoreText: hsl(229, 64%, 46%);
+    --HeaderOutline: hsl(217, 16%, 45%);
+    --ColorBg1: hsl(214, 47%, 23%);
+    --ColorBg2: hsl(237, 49%, 15%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed';
+    background-image: radial-gradient(circle, var(--ColorBg1), var(--ColorBg2));
+    background-size: 150%;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid var(--HeaderOutline);
+    padding: 15px 15px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    padding: 15px 0;
+}
+
+.score {
+    background-color: white;
+    height: 100%;
+    width: 91.11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.score p:first-child {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.points {
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 50px;
+}
+
+.main {
+    width: 100%;
+    background-image: url(/images/bg-triangle.svg);
+    background-position: center 70px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+    margin-bottom: 184px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, var(--Paper1), var(--Paper2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.item {
+    background-color: #e9e9e9;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.paper, .scissor, .rock {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
+
+.paper {
+    background-image: url(/images/icon-paper.svg);
+}
+
+.scissor {
+    background-image: url(/images/icon-scissors.svg);
+}
+
+.rock {
+    background-image: url(/images/icon-rock.svg);
+}
+
+.yellow {
+    background-image: linear-gradient(to top, var(--Scissors1), var(--Scissors2));
+}
+
+.red {
+    background-image: linear-gradient(to top, var(--Rock1), var(--Rock2));
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    gap: 70px;
+}
+
+.rules {
+    padding: 15px 0;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    color: #e9e9e9;
+    letter-spacing: 2px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.result {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    color: #e9e9e9;
+    font-size: 70px;
+}
+
+.playAgain {
+    padding: 15px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--DarkText);
+    font-weight: 700;
+    letter-spacing: 2px;
+}

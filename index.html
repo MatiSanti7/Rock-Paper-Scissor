@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <header>
-        <img src="/images/logo.svg" alt="">
+        <img src="/images/logo.svg" alt="" class="logo">
         <div class="score">
           <p>SCORE</p>
-          <p class="points"></p>
+          <p class="points">0</p>
         </div>
       </header>
-      <main>
-        <div class="btns">
-          <div class="top">
-            <div class="picked">
-              <div class="youPicked">
-                <img src="" alt="">
-              </div>
-              <div class="housePicked">
-                <img src="" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="bottom">
-            <img src="/images/icon-rock.svg" alt="">
-          </div>
+      <main class="main">
+        <div class="top picked">
+          <button class="youPicked btn">
+            <div class="item paper"></div>
+          </button>
+          <button class="housePicked btn yellow">
+            <div class="item scissor"></div>
+          </button>
+        </div>
+        <div class="bottom">
+          <button class="btn red">
+            <div class="item rock"></div>
+          </button>
         </div>
       </main>
       <footer>
         <div class="result">
-          <h1 class="dlw"></h1>
-          <button class="playAgain"></button>
+          <h1 class="dlw">YOU LOSE</h1>
+          <button class="playAgain">PLAY AGAIN</button>
         </div>
         <button class="rules">RULES</button>
       </footer>

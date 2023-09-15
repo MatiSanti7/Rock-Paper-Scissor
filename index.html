@@ -17,26 +17,33 @@
       </header>
       <main class="main">
         <div class="top picked">
-          <button class="youPicked btn">
-            <div class="item paper"></div>
-          </button>
-          <button class="housePicked btn yellow">
-            <div class="item scissor"></div>
-          </button>
+          <div class="yPicked">
+            <button id="btn" class="btn">
+              <div class="item paper" id="youPicked"></div>
+            </button>
+            <p class="textPicked dp-none">YOU PICKED</p>
+          </div>
+          <div class="hPicked">
+            <button id="btn" class="btn yellow">
+              <div class="item scissor" id="housePicked"></div>
+            </button>
+            <p class="textPicked dp-none">THE HOUSE PICKED</p>
+          </div>
         </div>
-        <div class="bottom">
-          <button class="btn red">
+        <div id="bottom" class="bottom">
+          <button id="btn" class="btn red">
             <div class="item rock"></div>
           </button>
         </div>
       </main>
       <footer>
-        <div class="result">
-          <h1 class="dlw">YOU LOSE</h1>
+        <div id="result" class="result dp-none">
+          <h1 class="dlw"></h1>
           <button class="playAgain">PLAY AGAIN</button>
         </div>
         <button class="rules">RULES</button>
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
